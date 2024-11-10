@@ -1,0 +1,9 @@
+#!/data/data/com.termux/files/usr/bin/bash
+out=logs/gps.txt
+read -r -e -p 'Append to file: ' -i "$out" out
+while true; do
+  date +%H:%M:%S | tr '\n' ' '
+  termux-location -r last | \
+    jq -r '"(\(.latitude * 1e6 | round / 1e6), \(.longitude * 1e6 | round / 1e6)) [\(.accuracy)] \(.elapsedMs / 1e3 | round)"'
+  sleep 1
+done | tee -a "$out"

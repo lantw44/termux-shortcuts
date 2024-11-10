@@ -1,0 +1,3 @@
+#!/data/data/com.termux/files/usr/bin/sh -ex
+df -hi /data
+exit 125

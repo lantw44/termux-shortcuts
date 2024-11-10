@@ -1,0 +1,2 @@
+#!/data/data/com.termux/files/usr/bin/sh
+am start -n com.google.android.documentsui/com.android.documentsui.files.FilesActivity

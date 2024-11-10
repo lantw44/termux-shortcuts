@@ -1,0 +1,5 @@
+#!/data/data/com.termux/files/usr/bin/bash -e
+read -r -e -p 'Host: ' -i 8.8.8.8 host
+set -x
+ping -c 4 "$host"
+exit 125

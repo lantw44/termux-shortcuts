@@ -1,0 +1,4 @@
+#!/data/data/com.termux/files/usr/bin/sh -ex
+apt update
+apt -V dist-upgrade
+exit 125

@@ -1,0 +1,2 @@
+#!/data/data/com.termux/files/usr/bin/sh
+am start -n com.google.android.cellbroadcastreceiver/com.android.cellbroadcastreceiver.CellBroadcastListActivity
